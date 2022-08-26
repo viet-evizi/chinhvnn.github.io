@@ -2,15 +2,15 @@
 html {
   scroll-behavior: smooth;
 }
-body{
+body {
   box-sizing: border-box;
-  word-wrap:break-word;
+  word-wrap: break-word;
 }
-h3{
+h3 {
   text-transform: uppercase;
   color: chocolate;
   text-shadow: 1px 2px rgba(248, 7, 7, 0.432);
-  
+
   font-size: 1.5rem;
   transition: transform 2s, font-size 1s;
   transition-timing-function: ease-in-out;
@@ -20,65 +20,84 @@ h3:hover {
   font-size: 2rem;
 }
 
- /* MENU */
- nav {
+/* MENU */
+nav {
   font-size: 1.5em;
 }
 nav ul {
- display: flex;
- justify-content: space-between;
- border-bottom: 1px solid #ccc;
- list-style: none;
- margin: 0 0 1rem 0;
- padding: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  list-style: none;
+  margin: 0 0 1rem 0;
+  padding: 0;
 }
 
 nav li {
- flex: 1 1 auto;
- background-image: linear-gradient(
-   to bottom,
-   transparent 50%,
-   #d3cf9c 50%,
-   #d3cd9c 95%,
-   #c5b976 95%
- );
- background-size: 100% 200%;
- background-position: top center;
- color: #666;
- display: inline-block;
- text-align: center;
- text-decoration: none;
- transition: all 0.25s ease-in-out;
- border-left: 2px solid #ddd;
- transform: skew(-15deg);
+  flex: 1 1 auto;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    #d3cf9c 50%,
+    #d3cd9c 95%,
+    #c5b976 95%
+  );
+  background-size: 100% 200%;
+  background-position: top center;
+  color: #666;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+  border-left: 2px solid #ddd;
+  transform: skew(-15deg);
 }
 nav li:hover {
- background-position: bottom center;
- color: rgba(0, 0, 0, 0.75);
+  background-position: bottom center;
+  color: rgba(0, 0, 0, 0.75);
 }
 nav li a {
- color: #666;
- display: block;
- padding: 5px;
- transition: all 0.25s ease-in-out;
- text-decoration: none;
+  color: #666;
+  display: block;
+  padding: 5px;
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
 }
 /* CONTENT */
- .tech-stack {
-     display: flex;
-     border: 1px rgb(209, 176, 26) solid;
-     border-radius: 10px;
-     width: 150px;
- }
- .tech-stack .svg-inline--fa {
-     font-size: 50px;
- }
- .exp ul span{
-     font-style: italic;
- }
- .footer{
-     color: bisque;
-     font-size: 2em;
-     text-align: center;
-     text-shadow: 1px 2px rgba(51, 51, 35, 0.432);
- }
+.tech-stack {
+  display: flex;
+  border: 1px rgb(209, 176, 26) solid;
+  border-radius: 10px;
+  width: 150px;
+}
+.tech-stack .fab,
+.tech-stack .fas,
+.tech-stack .fa-brands {
+  font-size: 2rem;
+}
+
+.exp ul span {
+  font-style: italic;
+}
+
+.footer {
+  color: bisque;
+  font-size: 2em;
+  text-align: center;
+  text-shadow: 1px 2px rgba(51, 51, 35, 0.432);
+}
+
+footer {
+  text-align: center;
+}
+
+footer * {
+  margin-left: 5px;
+}
+
+/* footer a:visited {
+  color: red;
+ } */
+footer a {
+  color: rgb(41, 41, 47);
+}
