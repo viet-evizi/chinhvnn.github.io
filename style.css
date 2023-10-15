@@ -81,9 +81,34 @@ nav li a {
   font-size: 2rem;
 }
 
+.see-more {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: rgb(150, 141, 59);
+}
+.see-more:hover {
+  color: rgb(209, 176, 26);
+  cursor: pointer;
+}
+
+.exp__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.exp__content.has-see-more{
+  max-height: 800px;
+  overflow-y: auto;
+}
+
 .exp ul span {
   font-style: italic;
 }
+
+/* FOOTER */
 
 .footer {
   color: bisque;
@@ -110,11 +135,15 @@ footer a {
 
 .exp-years {
   width: 100%;
+  display: flex;
+  background-color: #c8bfbf30;
+  padding: 5px;
+  justify-content: space-between;
   color: rgb(119, 88, 31);
   font-size: 1rem;
   font-weight: 700;
   border-bottom: 1px solid rgb(187, 168, 132);
-  margin: 15px 0px 5px 0px;
+  margin: 15px 0px 12px 0px;
 }
 
 .exp-years__title{
