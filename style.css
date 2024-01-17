@@ -87,6 +87,7 @@ nav li a {
   margin-bottom: 10px;
   font-weight: 600;
   color: rgb(150, 141, 59);
+  font-size: 13px;
 }
 .see-more:hover {
   color: rgb(209, 176, 26);
